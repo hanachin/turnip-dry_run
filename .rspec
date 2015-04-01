@@ -1,2 +1,4 @@
 --format documentation
 --color
+-r turnip/rspec
+-r turnip/dry_run
