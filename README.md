@@ -1,4 +1,5 @@
 # Turnip::DryRun
+[![Build Status](https://travis-ci.org/hanachin/turnip-dry_run.svg?branch=master)](https://travis-ci.org/hanachin/turnip-dry_run)
 
 Do dry run for turnip feature specs to get some step metadata.
 
