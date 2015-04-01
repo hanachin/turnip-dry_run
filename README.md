@@ -2,7 +2,7 @@
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/turnip/dry_run`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
+Do dry run for turnip feature specs to get some step metadata.
 
 ## Installation
 
@@ -22,7 +22,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+`spec/support/turnip-dry_run.rb`
+
+```rb
+if ENV['DRY_RUN']
+  Turnip::RSpec::Execute.prepend(Turnip::DryRun)
+
+  RSpec.configure do |config|
+    config.formatter = Turnip::DryRun::TextFormatter
+  end
+end
+```
+
+then
+
+```
+$ DRY_RUN=t bundle exec rspec
+```
 
 ## Development
 
@@ -32,7 +48,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/turnip-dry_run/fork )
+1. Fork it ( https://github.com/hanachin/turnip-dry_run/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
