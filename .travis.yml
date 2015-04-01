@@ -1,3 +1,9 @@
 language: ruby
 rvm:
   - 2.2.1
+gemfile:
+  - Gemfile
+  - rspec-3.2.x.gemfile
+  - rspec-3.1.x.gemfile
+  - rspec-3.0.x.gemfile
+  - rspec-2.99.x.gemfile
