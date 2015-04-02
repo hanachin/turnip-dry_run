@@ -25,6 +25,8 @@ Or install it yourself as:
 
 ```rb
 if ENV['DRY_RUN']
+  require 'turnip/dry_run'
+
   Turnip::RSpec::Execute.prepend(Turnip::DryRun)
 
   RSpec.configure do |config|
@@ -37,6 +39,9 @@ then
 
 ```
 $ DRY_RUN=t bundle exec rspec
+/Users/sei/src/github.com/hanachin/turnip-dry_run/examples/hello.feature:3 there is a monster called "Kijimun" -> /Users/sei/src/github.com/hanachin/turnip-dry_run/examples/steps/monster_steps.rb:1 there is a monster called :name
+/Users/sei/src/github.com/hanachin/turnip-dry_run/examples/hello.feature:6 I change its name to "Kijimuna"     -> /Users/sei/src/github.com/hanachin/turnip-dry_run/examples/steps/monster_steps.rb:5 I change its name to :name
+/Users/sei/src/github.com/hanachin/turnip-dry_run/examples/hello.feature:7 it should be called "Kijimuna"      -> /Users/sei/src/github.com/hanachin/turnip-dry_run/examples/steps/monster_steps.rb:9 it should be called "Kijimuna"
 ```
 
 ## Development
