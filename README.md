@@ -1,5 +1,5 @@
 # Turnip::DryRun
-[![Build Status](https://travis-ci.org/hanachin/turnip-dry_run.svg?branch=master)](https://travis-ci.org/hanachin/turnip-dry_run)
+[![Build Status](https://travis-ci.org/yasslab/turnip-dry_run.svg?branch=master)](https://travis-ci.org/yasslab/turnip-dry_run)
 
 Do dry run for turnip feature specs to get some step metadata.
 
@@ -52,7 +52,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/hanachin/turnip-dry_run/fork )
+1. Fork it ( https://github.com/yasslab/turnip-dry_run/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
