@@ -57,3 +57,10 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+
+## License
+
+Copyright &copy; 2015 [YassLab](http://yasslab.jp)
+
+The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
